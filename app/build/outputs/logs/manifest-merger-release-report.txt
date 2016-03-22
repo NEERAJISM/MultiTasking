@@ -1,0 +1,273 @@
+-- Merging decision tree log ---
+manifest
+ADDED from AndroidManifest.xml:2:1
+	xmlns:android
+		ADDED from AndroidManifest.xml:2:11
+	package
+		ADDED from AndroidManifest.xml:3:5
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
+	android:versionName
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
+	android:versionCode
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
+uses-permission#android.permission.BLUETOOTH
+ADDED from AndroidManifest.xml:5:5
+	android:name
+		ADDED from AndroidManifest.xml:5:22
+uses-permission#android.permission.VIBRATE
+ADDED from AndroidManifest.xml:6:5
+	android:name
+		ADDED from AndroidManifest.xml:6:22
+uses-permission#android.permission.WRITE_SETTINGS
+ADDED from AndroidManifest.xml:7:5
+	android:name
+		ADDED from AndroidManifest.xml:7:22
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from AndroidManifest.xml:8:5
+	android:name
+		ADDED from AndroidManifest.xml:8:22
+uses-permission#android.permission.BLUETOOTH_PRIVILEGED
+ADDED from AndroidManifest.xml:9:5
+	android:name
+		ADDED from AndroidManifest.xml:9:22
+uses-permission#android.permission.INTERNET
+ADDED from AndroidManifest.xml:10:5
+	android:name
+		ADDED from AndroidManifest.xml:10:22
+uses-permission#android.permission.WAKE_LOCK
+ADDED from AndroidManifest.xml:11:5
+	android:name
+		ADDED from AndroidManifest.xml:11:22
+uses-permission#android.permission.CAMERA
+ADDED from AndroidManifest.xml:12:5
+	android:name
+		ADDED from AndroidManifest.xml:12:22
+uses-permission#android.hardware.camera
+ADDED from AndroidManifest.xml:13:5
+	android:name
+		ADDED from AndroidManifest.xml:13:22
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from AndroidManifest.xml:14:5
+	android:name
+		ADDED from AndroidManifest.xml:14:22
+uses-permission#android.permission.CHANGE_WIFI_STATE
+ADDED from AndroidManifest.xml:15:5
+	android:name
+		ADDED from AndroidManifest.xml:15:22
+uses-permission#android.permission.CHANGE_WIFI_MULTICAST_STATE
+ADDED from AndroidManifest.xml:16:5
+	android:name
+		ADDED from AndroidManifest.xml:16:22
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from AndroidManifest.xml:17:5
+	android:name
+		ADDED from AndroidManifest.xml:17:22
+uses-permission#android.permission.CHANGE_NETWORK_STATE
+ADDED from AndroidManifest.xml:18:5
+	android:name
+		ADDED from AndroidManifest.xml:18:22
+uses-permission#android.permission.MODIFY_AUDIO_SETTINGS
+ADDED from AndroidManifest.xml:19:5
+	android:name
+		ADDED from AndroidManifest.xml:19:22
+uses-permission#com.android.alarm.permission.SET_ALARM
+ADDED from AndroidManifest.xml:20:5
+	android:name
+		ADDED from AndroidManifest.xml:20:22
+uses-permission#android.permission.READ_CALENDAR
+ADDED from AndroidManifest.xml:21:5
+	android:name
+		ADDED from AndroidManifest.xml:21:22
+uses-permission#android.permission.WRITE_CALENDAR
+ADDED from AndroidManifest.xml:22:5
+	android:name
+		ADDED from AndroidManifest.xml:22:22
+application
+ADDED from AndroidManifest.xml:24:5
+MERGED from com.android.support:appcompat-v7:22.0.0:22:5
+MERGED from com.android.support:support-v4:22.0.0:22:5
+	android:label
+		ADDED from AndroidManifest.xml:27:9
+	android:allowBackup
+		ADDED from AndroidManifest.xml:25:9
+	android:icon
+		ADDED from AndroidManifest.xml:26:9
+	android:theme
+		ADDED from AndroidManifest.xml:28:9
+receiver#com.whysoserious.neeraj.multitasking.WidgetProvider
+ADDED from AndroidManifest.xml:31:9
+	android:name
+		ADDED from AndroidManifest.xml:31:19
+intent-filter#android.appwidget.action.APPWIDGET_UPDATE+android.intent.action.BATTERY_CHANGED
+ADDED from AndroidManifest.xml:32:13
+action#android.appwidget.action.APPWIDGET_UPDATE
+ADDED from AndroidManifest.xml:33:17
+	android:name
+		ADDED from AndroidManifest.xml:33:25
+action#android.intent.action.BATTERY_CHANGED
+ADDED from AndroidManifest.xml:34:17
+	android:name
+		ADDED from AndroidManifest.xml:34:25
+meta-data#android.appwidget.provider
+ADDED from AndroidManifest.xml:36:13
+	android:resource
+		ADDED from AndroidManifest.xml:38:17
+	android:name
+		ADDED from AndroidManifest.xml:37:17
+receiver#com.whysoserious.neeraj.multitasking.FlashReciever
+ADDED from AndroidManifest.xml:41:9
+	android:name
+		ADDED from AndroidManifest.xml:41:19
+intent-filter#COM_FLASHLIGHT
+ADDED from AndroidManifest.xml:42:13
+action#COM_FLASHLIGHT
+ADDED from AndroidManifest.xml:43:17
+	android:name
+		ADDED from AndroidManifest.xml:43:25
+receiver#com.whysoserious.neeraj.multitasking.WifiReciever
+ADDED from AndroidManifest.xml:47:9
+	android:name
+		ADDED from AndroidManifest.xml:47:19
+intent-filter#COM_WIFI
+ADDED from AndroidManifest.xml:48:13
+action#COM_WIFI
+ADDED from AndroidManifest.xml:49:17
+	android:name
+		ADDED from AndroidManifest.xml:49:25
+receiver#com.whysoserious.neeraj.multitasking.MdataReciever
+ADDED from AndroidManifest.xml:53:9
+	android:name
+		ADDED from AndroidManifest.xml:53:19
+intent-filter#COM_MDATA
+ADDED from AndroidManifest.xml:54:13
+action#COM_MDATA
+ADDED from AndroidManifest.xml:55:17
+	android:name
+		ADDED from AndroidManifest.xml:55:25
+receiver#com.whysoserious.neeraj.multitasking.BluetoothReciever
+ADDED from AndroidManifest.xml:59:9
+	android:name
+		ADDED from AndroidManifest.xml:59:19
+intent-filter#COM_BLUETOOTH
+ADDED from AndroidManifest.xml:60:13
+action#COM_BLUETOOTH
+ADDED from AndroidManifest.xml:61:17
+	android:name
+		ADDED from AndroidManifest.xml:61:25
+receiver#com.whysoserious.neeraj.multitasking.AudioReciever
+ADDED from AndroidManifest.xml:65:9
+	android:name
+		ADDED from AndroidManifest.xml:65:19
+intent-filter#COM_AUDIO
+ADDED from AndroidManifest.xml:66:13
+action#COM_AUDIO
+ADDED from AndroidManifest.xml:67:17
+	android:name
+		ADDED from AndroidManifest.xml:67:25
+receiver#com.whysoserious.neeraj.multitasking.BrightnessReciever
+ADDED from AndroidManifest.xml:71:9
+	android:name
+		ADDED from AndroidManifest.xml:71:19
+intent-filter#COM_BRIGHTNESS
+ADDED from AndroidManifest.xml:72:13
+action#COM_BRIGHTNESS
+ADDED from AndroidManifest.xml:73:17
+	android:name
+		ADDED from AndroidManifest.xml:73:25
+receiver#com.whysoserious.neeraj.multitasking.SettingsReciever
+ADDED from AndroidManifest.xml:77:9
+	android:name
+		ADDED from AndroidManifest.xml:77:19
+intent-filter#COM_SETTINGS
+ADDED from AndroidManifest.xml:78:13
+action#COM_SETTINGS
+ADDED from AndroidManifest.xml:79:17
+	android:name
+		ADDED from AndroidManifest.xml:79:25
+receiver#com.whysoserious.neeraj.multitasking.DatesettingsReciever
+ADDED from AndroidManifest.xml:83:9
+	android:name
+		ADDED from AndroidManifest.xml:83:19
+intent-filter#COM_DSETTINGS
+ADDED from AndroidManifest.xml:84:13
+action#COM_DSETTINGS
+ADDED from AndroidManifest.xml:85:17
+	android:name
+		ADDED from AndroidManifest.xml:85:25
+receiver#com.whysoserious.neeraj.multitasking.AlarmSettingsReciever
+ADDED from AndroidManifest.xml:89:9
+	android:name
+		ADDED from AndroidManifest.xml:89:19
+intent-filter#COM_ALARMSETTINGS
+ADDED from AndroidManifest.xml:90:13
+action#COM_ALARMSETTINGS
+ADDED from AndroidManifest.xml:91:17
+	android:name
+		ADDED from AndroidManifest.xml:91:25
+receiver#com.whysoserious.neeraj.multitasking.RotationReciever
+ADDED from AndroidManifest.xml:95:9
+	android:name
+		ADDED from AndroidManifest.xml:95:19
+intent-filter#COM_ROTATION
+ADDED from AndroidManifest.xml:96:13
+action#COM_ROTATION
+ADDED from AndroidManifest.xml:97:17
+	android:name
+		ADDED from AndroidManifest.xml:97:25
+receiver#com.whysoserious.neeraj.multitasking.Calendersettings
+ADDED from AndroidManifest.xml:101:9
+	android:name
+		ADDED from AndroidManifest.xml:101:19
+intent-filter#COM_CALENDER
+ADDED from AndroidManifest.xml:102:13
+action#COM_CALENDER
+ADDED from AndroidManifest.xml:103:17
+	android:name
+		ADDED from AndroidManifest.xml:103:25
+receiver#com.whysoserious.neeraj.multitasking.AlarmManagerBroadcastReceiver
+ADDED from AndroidManifest.xml:107:9
+	android:name
+		ADDED from AndroidManifest.xml:107:19
+intent-filter#android.intent.action.ACTION_POWER_CONNECTED+android.intent.action.ACTION_POWER_DISCONNECTED+android.intent.action.BATTERY_CHANGED+android.intent.action.BOOT_COMPLETED+android.intent.action.CONFIGURATION_CHANGED+android.intent.action.DREAMING_STOPPED+android.intent.action.TIME_TICK+android.intent.action.USER_PRESENT
+ADDED from AndroidManifest.xml:108:13
+action#android.intent.action.TIME_TICK
+ADDED from AndroidManifest.xml:109:17
+	android:name
+		ADDED from AndroidManifest.xml:109:25
+action#android.intent.action.DREAMING_STOPPED
+ADDED from AndroidManifest.xml:110:17
+	android:name
+		ADDED from AndroidManifest.xml:110:25
+action#android.intent.action.USER_PRESENT
+ADDED from AndroidManifest.xml:111:17
+	android:name
+		ADDED from AndroidManifest.xml:111:25
+action#android.intent.action.BOOT_COMPLETED
+ADDED from AndroidManifest.xml:112:17
+	android:name
+		ADDED from AndroidManifest.xml:112:25
+action#android.intent.action.CONFIGURATION_CHANGED
+ADDED from AndroidManifest.xml:114:17
+	android:name
+		ADDED from AndroidManifest.xml:114:25
+action#android.intent.action.ACTION_POWER_CONNECTED
+ADDED from AndroidManifest.xml:115:17
+	android:name
+		ADDED from AndroidManifest.xml:115:25
+action#android.intent.action.ACTION_POWER_DISCONNECTED
+ADDED from AndroidManifest.xml:116:17
+	android:name
+		ADDED from AndroidManifest.xml:116:25
+uses-sdk
+INJECTED from AndroidManifest.xml:0:0 reason: use-sdk injection requested
+MERGED from com.android.support:appcompat-v7:22.0.0:20:5
+MERGED from com.android.support:support-v4:22.0.0:20:5
+	android:targetSdkVersion
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
+	android:minSdkVersion
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0

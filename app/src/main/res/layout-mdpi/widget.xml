@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="180sp"
+    android:background="@drawable/smalllinearblack"
+    android:orientation="horizontal"
+    android:padding="3dp"
+    android:layout_gravity="center_horizontal"
+    android:weightSum="100">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="4dp"
+        android:layout_weight="43"
+        android:orientation="vertical"
+        android:weightSum="100">
+
+        <ImageView
+            android:id="@+id/ivflash"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="25"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="3dp"
+            android:src="@drawable/flashoff" />
+
+
+        <ImageView
+            android:id="@+id/ivrotation"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="25"
+            android:padding="5dp"
+            android:src="@drawable/screen_rotation" />
+
+        <ImageView
+            android:id="@+id/ivbright"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="25"
+            android:padding="3dp"
+            android:src="@drawable/brightness" />
+
+        <ImageView
+            android:id="@+id/ivaudio"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="25"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="3dp"
+            android:src="@drawable/normal" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="4dp"
+        android:layout_weight="14"
+        android:orientation="vertical"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:id="@+id/linearclock"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="35"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="25"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <TextClock
+                    android:id="@+id/tcmaintime"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="10"
+                    android:fontFamily="sans-serif-light"
+                    android:format12Hour="hh : mm"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:paddingTop="15dp"
+                    android:textColor="#ffffff"
+                    android:textSize="55sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="65"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <LinearLayout
+                android:id="@+id/linearcalender"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="53"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="75"
+                    android:src="@drawable/calender" />
+
+                <TextClock
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="25"
+                    android:format12Hour="EEE | dd MMM"
+                    android:gravity="center_vertical"
+                    android:textColor="#ffffff"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linearalarm"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="47"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="75"
+                    android:padding="5dp"
+                    android:src="@drawable/alarm" />
+
+                <TextView
+                    android:id="@+id/tvalarm"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="25"
+                    android:gravity="center_vertical"
+                    android:text="Sun 12:35 AM"
+                    android:textColor="#19c5ff"
+                    android:textSize="11dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="4dp"
+        android:layout_weight="43"
+        android:orientation="vertical"
+        android:weightSum="100">
+
+        <ImageView
+            android:id="@+id/ivwifi"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="25"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="3dp"
+            android:src="@drawable/wifioff" />
+
+        <ImageView
+            android:id="@+id/ivbluetooth"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="25"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="3dp"
+            android:src="@drawable/bluetoothoff" />
+
+        <ImageView
+            android:id="@+id/ivmdata"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="25"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="3dp"
+            android:src="@drawable/mdataoff" />
+
+        <ImageView
+            android:id="@+id/ivsettings"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="25"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="3dp"
+            android:src="@drawable/settings" />
+    </LinearLayout>
+</LinearLayout>

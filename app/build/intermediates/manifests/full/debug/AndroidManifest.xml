@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.whysoserious.neeraj.multitasking"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="22" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_PRIVILEGED" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/appiconless"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.whysoserious.neeraj.multitasking.DefaultLaunchActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name="com.whysoserious.neeraj.multitasking.WidgetProvider" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="android.intent.action.BATTERY_CHANGED" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widgetdefine" />
+        </receiver>
+        <receiver android:name="com.whysoserious.neeraj.multitasking.FlashReciever" >
+            <intent-filter>
+                <action android:name="COM_FLASHLIGHT" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.whysoserious.neeraj.multitasking.WifiReciever" >
+            <intent-filter>
+                <action android:name="COM_WIFI" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.whysoserious.neeraj.multitasking.MdataReciever" >
+            <intent-filter>
+                <action android:name="COM_MDATA" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.whysoserious.neeraj.multitasking.BluetoothReciever" >
+            <intent-filter>
+                <action android:name="COM_BLUETOOTH" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.whysoserious.neeraj.multitasking.AudioReciever" >
+            <intent-filter>
+                <action android:name="COM_AUDIO" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.whysoserious.neeraj.multitasking.BrightnessReciever" >
+            <intent-filter>
+                <action android:name="COM_BRIGHTNESS" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.whysoserious.neeraj.multitasking.SettingsReciever" >
+            <intent-filter>
+                <action android:name="COM_SETTINGS" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.whysoserious.neeraj.multitasking.DatesettingsReciever" >
+            <intent-filter>
+                <action android:name="COM_DSETTINGS" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.whysoserious.neeraj.multitasking.AlarmSettingsReciever" >
+            <intent-filter>
+                <action android:name="COM_ALARMSETTINGS" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.whysoserious.neeraj.multitasking.RotationReciever" >
+            <intent-filter>
+                <action android:name="COM_ROTATION" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.whysoserious.neeraj.multitasking.Calendersettings" >
+            <intent-filter>
+                <action android:name="COM_CALENDER" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.whysoserious.neeraj.multitasking.AlarmManagerBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.TIME_TICK" />
+                <action android:name="android.intent.action.DREAMING_STOPPED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.BATTERY_CHANGED" />
+                <action android:name="android.intent.action.CONFIGURATION_CHANGED" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

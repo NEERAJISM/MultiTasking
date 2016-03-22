@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Android_sdk\sdk\extras\android\m2repository\com\android\support\support-annotations\22.0.0\support-annotations-22.0.0.jar"
+        jumboMode="false"
+        revision="23.0.0 rc2"
+        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
+        <dex dex="C:\Users\sony\AndroidStudioProjects\MultiTasking\app\build\intermediates\pre-dexed\debug\support-annotations-22.0.0-0ab8a02dded19d4f20088ebf40ffba4fc4b76ff5.jar" />
+    </item>
+    <item
+        jar="C:\Users\sony\AndroidStudioProjects\MultiTasking\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\jars\libs\internal_impl-22.0.0.jar"
+        jumboMode="false"
+        revision="23.0.0 rc2"
+        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
+        <dex dex="C:\Users\sony\AndroidStudioProjects\MultiTasking\app\build\intermediates\pre-dexed\debug\internal_impl-22.0.0-23b07fb2c8bcb05237bb42a25ca547e31c18a0b9.jar" />
+    </item>
+    <item
+        jar="C:\Users\sony\AndroidStudioProjects\MultiTasking\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc2"
+        sha1="d84409890828e07d344a3b9b1da545dba9897b51">
+        <dex dex="C:\Users\sony\AndroidStudioProjects\MultiTasking\app\build\intermediates\pre-dexed\debug\classes-b3d910694e595d55b90dc3f82357c6bc27559ce2.jar" />
+    </item>
+    <item
+        jar="C:\Users\sony\AndroidStudioProjects\MultiTasking\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc2"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="C:\Users\sony\AndroidStudioProjects\MultiTasking\app\build\intermediates\pre-dexed\debug\classes-150236af2a11125f1f3cab1c15d8e09d551e4c47.jar" />
+    </item>
+
+</items>

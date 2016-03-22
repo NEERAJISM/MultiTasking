@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:weightSum="100"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <ViewFlipper
+        android:layout_weight="25"
+        android:id="@+id/viewflipper"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:autoStart="true"
+        android:padding="5dp"
+        android:layout_marginBottom="2dp"
+        android:inAnimation="@anim/abc_fade_in"
+        android:outAnimation="@anim/abc_fade_out"
+        android:flipInterval="2500">
+
+        <ImageView
+            android:layout_gravity="top"
+            android:layout_width="match_parent"
+            android:id="@+id/widgetsettings"
+            android:layout_height="match_parent"
+            android:src="@drawable/widgetcolumn" />
+
+        <ImageView
+            android:id="@+id/nexus5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/nexus5main" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/tablet"
+            android:src="@drawable/tablet" />
+
+    </ViewFlipper>
+
+    <LinearLayout
+        android:layout_weight="75"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+    <Button
+        android:textAllCaps="false"
+        android:id="@+id/blaunchwidget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="20dp"
+        android:layout_margin="30dp"
+        android:textSize="20dp"
+        android:background="@drawable/smalllinearblack"
+        android:text="Click To Launch Widget"
+        android:textColor="#ffffff" />
+    </LinearLayout>
+</LinearLayout>
